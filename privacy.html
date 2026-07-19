@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy — Pineapple</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            color: #23252b;
+            background: #ffffff;
+            line-height: 1.65;
+            padding: 48px 24px 64px;
+        }
+        .wrap { max-width: 680px; margin: 0 auto; }
+        a { color: #d6a626; text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+        .back { font-size: 14px; display: inline-block; margin-bottom: 34px; color: #5c626e; font-weight: 600; }
+        h1 { font-size: 32px; letter-spacing: -0.02em; margin-bottom: 8px; }
+        .lead { color: #5c626e; margin-bottom: 30px; font-size: 16px; }
+        h2 { font-size: 17px; margin: 26px 0 8px; }
+        p, li { font-size: 14.5px; color: #3d414a; }
+        ul { padding-left: 20px; margin: 6px 0; }
+        .legal {
+            margin-top: 44px;
+            padding-top: 18px;
+            border-top: 1px solid #ececef;
+            font-size: 11.5px;
+            color: #8b909b;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a class="back" href="/">← Pineapple</a>
+        <h1>Privacy</h1>
+        <p class="lead">The short version: Pineapple keeps to itself. No accounts, no telemetry,
+           no analytics — nothing about how you use it ever leaves your machine. The only thing it
+           does over the network is check this site for a newer version.</p>
+
+        <h2>Who we are</h2>
+        <p>SOTA TEH d.o.o., Pod bukvami 24, SI-1000 Ljubljana, Slovenia (“we”) makes Pineapple and is
+           the controller for the little data described here. Contact:
+           <a class="mail mail-text" data-u="pineapple" data-h="sota-teh.com">pineapple [at] sota-teh [dot] com</a>.</p>
+
+        <h2>What Pineapple processes, and why</h2>
+        <ul>
+            <li><b>This website:</b> a plain static page — no cookies, no analytics, no third-party
+                scripts. It is served by GitHub Pages (GitHub, Inc.); like any web host, GitHub
+                receives standard connection data such as your IP address in order to deliver the page.</li>
+            <li><b>The app on your machine:</b> your settings live in a local file. Nothing is
+                collected, profiled or sent anywhere — Pineapple has no analytics and no account to sign in to.</li>
+            <li><b>Checking for updates:</b> the one exception. Pineapple fetches a small version file
+                from this site (and, if you choose to update, the download package). That is an ordinary
+                web request, so the host sees your IP address at that moment — exactly as when you open
+                the page yourself — and no identifier or personal data is sent.</li>
+            <li><b>Email:</b> if you write to us, we receive your address, name and whatever your message
+                contains, and use it solely to reply (GDPR art. 6(1)(b) — steps prior to a contract;
+                art. 6(1)(f) — legitimate interest in answering correspondence). Messages are kept as
+                ordinary business records and shared with no one, except where the law requires it.</li>
+        </ul>
+
+        <h2>Your rights</h2>
+        <p>We hold nothing about you beyond any email you send, so there is usually nothing to access
+           or erase — but you may still request access, rectification, erasure, restriction, portability,
+           or object to processing: one email to
+           <a class="mail mail-text" data-u="pineapple" data-h="sota-teh.com">pineapple [at] sota-teh [dot] com</a>
+           is enough. You can also lodge a complaint with the Slovenian supervisory authority, the
+           Information Commissioner (<a href="https://www.ip-rs.si" target="_blank" rel="noopener">ip-rs.si</a>).</p>
+
+        <p class="legal">
+            SOTA TEH d.o.o. · Pod bukvami 24, SI-1000 Ljubljana, Slovenia ·
+            matična št. (reg. no.) 6150322000 · ID za DDV (VAT) SI30343275 · © 2026
+        </p>
+    </div>
+    <script>
+        (function () {
+            function addr(el) { return el.dataset.u + "@" + el.dataset.h; }
+            document.querySelectorAll("a.mail").forEach(function (a) {
+                a.setAttribute("href", "mailto:" + addr(a));
+            });
+            document.querySelectorAll(".mail-text").forEach(function (el) {
+                el.textContent = addr(el);
+            });
+        })();
+    </script>
+</body>
+</html>

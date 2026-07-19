@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "url": "downloads/Pineapple-1.0.0.zip",
+  "sha256": "69dc5fc7a9968d3168976408860b1a493357683897edf6f998deceedc15a9726",
+  "notes": "Initial release of the WPF edition: stay awake, humanized key-press activity with a workload slider, and Windows Power Mode switching from the tray."
+}
