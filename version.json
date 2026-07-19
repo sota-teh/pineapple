@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "url": "downloads/Pineapple-1.0.0.zip",
+  "sha256": "e314f3584a9df9a81daa9ac39e64b70cc08c5f8168d6d1e7e1b5cfbf23e3ce96",
+  "notes": "Presets, drag to reorder presets, dark scroll bars, tray menu opens at the mouse, settings panel and updater fixes.",
+  "changelog": [
+    "1.0.1",
+    "•  Presets",
+    "•  Drag to reorder presets",
+    "•  Dark scroll bars",
+    "•  Tray menu opens at the mouse",
+    "•  Settings panel and updater fixes",
+    "",
+    "1.0.0",
+    "•  Stay awake",
+    "•  Key presses with a workload slider",
+    "•  Windows Power Mode",
+    "•  Start with Windows",
+    "•  Automatic update checks"
+  ]
+}
